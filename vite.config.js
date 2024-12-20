@@ -6,7 +6,8 @@ import react from '@vitejs/plugin-react'
 //   plugins: [react()],
 // })
 
-export default {
-  base: './',  // This ensures relative paths for assets when deployed
-};
+export default defineConfig({
+  plugins: [react()],
+  base: "./", // Use relative paths for assets
+});
 
